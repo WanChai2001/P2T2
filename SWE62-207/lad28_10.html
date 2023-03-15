@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Web Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            // jquery
+            $(document).ready(function(){
+
+                $("#input1").keyup(function(){
+                    let number = $("#input1").val();
+                    let html = "";
+                    
+                    for(let i=1;i<=12;i++){
+                        html += number+" x "+i+" = "+(number*i)+" <br>";
+                    }
+
+                    $("#display").html(html);
+                });
+
+            });
+
+        </script>
+    </head>
+    <body>
+ 
+        <input type="number" id="input1">
+        <p id="display"></p>
+    </body>
+</html>

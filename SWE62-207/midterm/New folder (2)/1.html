@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function fncSubmit()
+{
+    if(document.getElementById('textfield').value == "")
+    {
+        alert('PLEASE INPUT DATA');
+        return false;
+    }
+}
+</script>
+<body>
+<form  action="" method="post" onSubmit="JavaScript:return fncSubmit();">
+<h1>Customer Satisfaction is #1</h1>
+<h4>Please take the time to fill out the folowing survey</h4>
+<br>First Name :<input type="text" name="textfield" id="textfield size="20"/></br>
+<br>Last Name :<input type="text" name="Last Name" id="textfield size="20"/></br>
+<br>Your favorite wedsite :<input type="text" name="favorite" id="textfield size="20"/><br>
+<br>Your age in years :<input type="text" name="age" id="textfield size="20"/></br>
+<br>What colors have you colored your hair :<input type="checkbox" name="Brown" value="Yes" checked="checked" /> Brown <input type="checkbox" name="Blonde" value="Yes" /> Blonde <input type="checkbox" name="Black" value="Yes" /> Black <input type="checkbox" name="Red" value="Yes" /> Red <input type="checkbox" name="None" value="Yes" /> None </br>
+<br>Rate your experirnce :<input type="radio" name="n1" value="M"/> 1 - Very Poor<input type="radio" name="n2" value="M"  /> 2
+<input type="radio" name="n3" value="M"  /> 3
+<input type="radio" name="n4" value="M"  /> 4
+<input type="radio" name="n5" value="M"  /> 5 - Very Good </br>
+<label>Other Comments:
+<textarea name= “detail" id= “detail" id="textfield cols= “45" rows= “5"></textarea>
+</label>
+<br>Email address :<input type="text" name="age" id="textfield size="20"/></br>
+<input type="submit" name="button" id="button" value="Submit Query">
+</body>
+</html>
